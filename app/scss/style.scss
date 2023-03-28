@@ -1,0 +1,15 @@
+// Mixins
+@use "mixins" as m;
+
+// Variables & functions
+@import "variables";
+
+// Globals & layout
+@import "globals";
+
+// Colors
+
+// Components (button, card, navbar etc)
+@import "header";
+
+// Utilities (margin, padding, opacity, etc)
