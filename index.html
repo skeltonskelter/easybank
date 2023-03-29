@@ -19,28 +19,17 @@
     />
     <link rel="stylesheet" href="/app/css/style.css" />
     <title>Frontend Mentor | Easybank landing page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <header class="header">
-      <div class="overlay"></div>
-      <nav class="flex flex-jc-sb flex-ai-c">
+      <div class="overlay has-fade"></div>
+      <nav class="container flex flex-jc-sb flex-ai-c">
         <a href="/" class="header__logo">
           <img src="images/logo.svg" alt="Easybank" />
         </a>
         <a
           id="btnHamburger"
-          class="header__menu hide-for-desktop open"
+          class="header__toggle hide-for-desktop open"
           href="#"
         >
           <span></span>
@@ -57,6 +46,11 @@
           >Request Invite</a
         >
       </nav>
+
+      <div class="header__menu has-fade">
+        <a href="#">Home</a><a href="#">About</a><a href="#">Contact</a
+        ><a href="#">Blog</a><a href="#">Careers</a>
+      </div>
     </header>
 
     Home About Contact Blog Careers Request Invite Next generation digital
