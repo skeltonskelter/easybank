@@ -9,13 +9,15 @@
 
 const { src, dest, watch, series } = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
-const purgecss = require("gulp-purgecss");
+// const purgecss = require("gulp-purgecss");
 
 function buildStyles() {
-  return src("app/scss/**/*.scss")
-    .pipe(sass({ outputStyle: "expanded" }))
-    .pipe(purgecss({ content: ["*.html"] }))
-    .pipe(dest("app/css"));
+  return (
+    src("app/scss/**/*.scss")
+      .pipe(sass({ outputStyle: "expanded" }))
+      // .pipe(purgecss({ content: ["*.html"] }))
+      .pipe(dest("app/css"))
+  );
 }
 
 function watchTask() {
