@@ -8,11 +8,8 @@
 // Globals & layout
 @import "globals";
 
-// Colors
-
-// Components (button, card, navbar etc)
+// Components (header, hero, feature, etc)
 @import "header";
 @import "hero";
 @import "feature";
-
-// Utilities (margin, padding, opacity, etc)
+@import "article";
