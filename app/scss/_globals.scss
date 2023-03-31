@@ -34,6 +34,36 @@ h3 {
   margin-top: 0px;
 }
 
+h1 {
+  font-size: 2.315rem;
+  font-weight: 300;
+  line-height: 1.15;
+  color: $darkBlue;
+  margin-bottom: 1.5rem;
+
+  @include m.breakpoint-up(large) {
+    font-size: $font-xl;
+  }
+}
+
+h2 {
+  font-size: 1.875rem;
+  font-weight: 300;
+  line-height: 1.15;
+  color: $darkBlue;
+  margin-bottom: 1.5625rem;
+
+  @include m.breakpoint-up(large) {
+    font-size: 2.25rem;
+    margin-bottom: 2.25rem;
+  }
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
+}
+
 // Links
 a,
 a:visited,
@@ -47,28 +77,52 @@ a:hover {
   margin: 0 auto;
 
   &--pall {
-    padding-top: 2.25rem;
+    padding-top: 4.375rem;
     padding-right: 1.5rem;
-    padding-bottom: 2.25rem;
+    padding-bottom: 4.375;
     padding-left: 1.5rem;
+
+    @include m.breakpoint-up(large) {
+      padding-top: 6rem;
+      padding-bottom: 6;
+    }
   }
+
   &--py {
-    padding-top: 2.25rem;
-    padding-bottom: 2.25rem;
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+
+    @include m.breakpoint-up(large) {
+      padding-top: 6rem;
+      padding-bottom: 6;
+    }
   }
+
   &--px {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
   }
+
   &--pt {
-    padding-top: 2.25rem;
+    padding-top: 4.375rem;
+
+    @include m.breakpoint-up(large) {
+      padding-top: 6rem;
+    }
   }
+
   &--pr {
     padding-right: 1.5rem;
   }
+
   &--pb {
-    padding-bottom: 2.25rem;
+    padding-bottom: 4.375rem;
+
+    @include m.breakpoint-up(large) {
+      padding-bottom: 6;
+    }
   }
+
   &--pl {
     padding-left: 1.5rem;
   }
