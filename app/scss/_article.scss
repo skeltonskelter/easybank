@@ -1,9 +1,6 @@
 .article {
   background-color: $veryLightGray;
 
-  &__content {
-  }
-
   &__grid {
     display: grid;
     grid-template-columns: 1fr;
